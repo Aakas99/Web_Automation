@@ -1,0 +1,15 @@
+Register= //a[text()='Register']
+Firstname= //input[@id='customer.firstName']
+LastName= //input[@id='customer.lastName']
+Address = //input[@id='customer.address.street']
+City = //input[@id='customer.address.city']
+State = //input[@id='customer.address.state']
+Zipcode = //input[@id='customer.address.zipCode']
+PhoneNumber = //input[@id='customer.phoneNumber']
+SSN = //input[@id='customer.ssn']
+Username = //input[@id='customer.username']
+Password= //input[@id='customer.password']
+ConfirmPassword = //input[@id='repeatedPassword']
+
+
+
