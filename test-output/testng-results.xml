@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-31T17:56:32 IST" name="Suite" finished-at="2025-03-31T17:56:40 IST" duration-ms="7663">
+  <suite started-at="2025-04-06T21:58:31 IST" name="Suite" finished-at="2025-04-06T21:58:38 IST" duration-ms="6825">
     <groups>
     </groups>
-    <test started-at="2025-03-31T17:56:32 IST" name="Test" finished-at="2025-03-31T17:56:40 IST" duration-ms="7663">
-      <class name="Launchcode.Driversetup">
-        <test-method signature="driverstart(java.lang.String,java.lang.String)[pri:0, instance:Launchcode.Driversetup@6ad82709]" started-at="2025-03-31T17:56:32 IST" name="driverstart" finished-at="2025-03-31T17:56:40 IST" duration-ms="7587" status="PASS">
+    <test started-at="2025-04-06T21:58:31 IST" name="Test" finished-at="2025-04-06T21:58:38 IST" duration-ms="6825">
+      <class name="Pages.Register">
+        <test-method is-config="true" signature="driverstart(java.lang.String,java.lang.String)[pri:0, instance:Pages.Register@37883b97]" started-at="2025-04-06T21:58:31 IST" name="driverstart" finished-at="2025-04-06T21:58:37 IST" duration-ms="6023" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverstart -->
-      </class> <!-- Launchcode.Driversetup -->
+        <test-method signature="register()[pri:0, instance:Pages.Register@37883b97]" started-at="2025-04-06T21:58:37 IST" name="register" finished-at="2025-04-06T21:58:38 IST" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+      </class> <!-- Pages.Register -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

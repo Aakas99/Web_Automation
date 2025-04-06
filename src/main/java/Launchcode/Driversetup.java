@@ -3,6 +3,8 @@ package Launchcode;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -12,7 +14,7 @@ public class Driversetup {
 
 	public WebDriver driver;
 	
-	@Test
+	@BeforeTest
 	@Parameters({"url", "browser"})
 	public void driverstart(String url, String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
@@ -31,5 +33,17 @@ public class Driversetup {
 		System.out.println("Page Title " + driver.getTitle() );
 	}
 	
+	public WebDriver getDriver() {
+        return driver;
+    }
 	
+	//@AfterTest
+	public void quitDriver() {
+        if (driver != null) {
+            driver.quit();
+            System.out.println("Driver quit!");
+        }
+	
+	
+}
 }

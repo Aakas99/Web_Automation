@@ -5,7 +5,7 @@
      <parameter name="url" value="https://parabank.parasoft.com/parabank/index.htm"/>
      <parameter name="browser" value="Chrome"/>
         <classes>
-            <class name="Launchcode.Driversetup"/>
+            <class name="Pages.Register"/>
         </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
