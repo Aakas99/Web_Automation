@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test1(failed)">
     <parameter name="browser" value="Chrome"/>
-    <parameter name="url" value="https://parabank.parasoft.com/parabank/index.htm"/>
+    <parameter name="url" value="https://www.saucedemo.com/"/>
     <classes>
-      <class name="Pages.Register">
+      <class name="Runner.RunCucumberTestNG">
         <methods>
-          <include name="driverstart"/>
-          <include name="register"/>
-          <include name="quitDriver"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2"/>
+          <include name="setupDriver"/>
         </methods>
-      </class> <!-- Pages.Register -->
+      </class> <!-- Runner.RunCucumberTestNG -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

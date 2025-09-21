@@ -1,7 +1,11 @@
 package Pages;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -19,7 +23,14 @@ public class Register extends Driversetup {
 		
 		
 		driver = getDriver();
-		driver.findElement(By.xpath(textfile.textreader("Register"))).click();
+		driver.findElement(By.xpath(textfile.textreader("Download"))).click();
+		//Select Drop = new Select(driver.findElement(By.xpath(textfile.textreader("Download"))));
+		//Drop.selectByValue("Windows");
+		
+		//driver.findElement(By.xpath(textfile.textreader("Window"))).click();
+		File Directory = new File("Downloads");
+		System.out.println(Directory);
+		
 		
 	}
 }

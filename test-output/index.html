@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\spaak\OneDrive\Documents\JavaWorkspace\Web_Automation\testng.xml</span>
+                    <span>C:\Users\spaak\OneDrive\Documents\ScratchUIbuild\Web_Automation\Web_Automation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Pages.Register" class="method navigator-link" hash-for-method="register">register</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunCucumberTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Login functionality of UI&quot;, &quot;Login the UI with multiple userID&quot;)">runScenario("Login functionality of UI", "Login the UI with multiple userID")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunCucumberTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Login functionality of UI&quot;, &quot;Login the UI with multiple userID&quot;)">runScenario("Login functionality of UI", "Login the UI with multiple userID")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunCucumberTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Login functionality of UI&quot;, &quot;Login the UI with multiple userID&quot;)">runScenario("Login functionality of UI", "Login the UI with multiple userID")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,14 +131,37 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Pages.Register</span>
+              <span class="class-name">Runner.RunCucumberTestNG</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="register">
-                  </a> <!-- register -->
-                  <span class="method-name">register</span>
+                  <a name="runScenario(&quot;Login functionality of UI&quot;, &quot;Login the UI with multiple userID&quot;)">
+                  </a> <!-- runScenario("Login functionality of UI", "Login the UI with multiple userID") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login functionality of UI","Login the UI with multiple userID")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login functionality of UI&quot;, &quot;Login the UI with multiple userID&quot;)">
+                  </a> <!-- runScenario("Login functionality of UI", "Login the UI with multiple userID") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login functionality of UI","Login the UI with multiple userID")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login functionality of UI&quot;, &quot;Login the UI with multiple userID&quot;)">
+                  </a> <!-- runScenario("Login functionality of UI", "Login the UI with multiple userID") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login functionality of UI","Login the UI with multiple userID")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,20 +169,20 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\spaak\OneDrive\Documents\JavaWorkspace\Web_Automation\testng.xml</span>
+            <span class="header-content">C:\Users\spaak\OneDrive\Documents\ScratchUIbuild\Web_Automation\Web_Automation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test1&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;https://parabank.parasoft.com/parabank/index.htm&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.saucedemo.com/&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Pages.Register&quot;/&gt;
+      &lt;class name=&quot;Runner.RunCucumberTestNG&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,7 +194,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,6 +204,14 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -187,16 +228,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'register')
-data.setCell(0, 2, 'Pages.Register')
-data.setCell(0, 3, 741);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'Runner.RunCucumberTestNG')
+data.setCell(0, 3, 4674);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'Runner.RunCucumberTestNG')
+data.setCell(1, 3, 4642);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'Runner.RunCucumberTestNG')
+data.setCell(2, 3, 4632);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 741 ms</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -222,15 +271,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Pages.Register</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Runner.RunCucumberTestNG</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">driverstart(https://parabank.parasoft.com/parabank/index.htm, Chrome)</span>
+                <span class="method-name">setupDriver(https://www.saucedemo.com/, Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@5b03b9fe)</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">register</span>
-                <span class="method-start">6058 ms</span>
+                <span class="method-name">runScenario("Login functionality of UI", "Login the UI with multiple userID")</span>
+                <span class="method-start">1040 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login functionality of UI", "Login the UI with multiple userID")</span>
+                <span class="method-start">1040 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login functionality of UI", "Login the UI with multiple userID")</span>
+                <span class="method-start">1040 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">5718 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
