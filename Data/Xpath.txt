@@ -1,0 +1,16 @@
+Download=(//span[@class='caret'])[6]
+Window=//a[text()='Windows']
+LastName=//input[@id='customer.lastName']
+Address=//input[@id='customer.address.street']
+City=//input[@id='customer.address.city']
+State=//input[@id='customer.address.state']
+Zipcode=//input[@id='customer.address.zipCode']
+PhoneNumber=//input[@id='customer.phoneNumber']
+SSN=//input[@id='customer.ssn']
+Username=//input[@id='user-name']
+Password=//input[@id='password']
+LoginBT=//input[@id='login-button']
+ConfirmPassword=//input[@id='repeatedPassword']
+
+
+
