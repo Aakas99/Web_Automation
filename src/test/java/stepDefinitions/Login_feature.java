@@ -11,10 +11,12 @@ public class Login_feature {
 	Login_page login;
 	
 
+	@SuppressWarnings("static-access")
 	@Given("Launch the Web browser")
 	public void launch_the_web_browser() {
 		
 		login = new Login_page(Hooks.getDriverSetup().getDriver());
+		
 	}
 	
 	@When("UserId {word} and password {word} is entered")

@@ -37,7 +37,7 @@ public class Driversetup {
 		driver.get().manage().window().maximize();
 	}
 	
-	public WebDriver getDriver() { return driver.get(); }
+	public static WebDriver getDriver() { return driver.get(); }
 
 	//@AfterTest
 	public void quitDriver() {

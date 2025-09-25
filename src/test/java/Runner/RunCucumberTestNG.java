@@ -21,7 +21,7 @@ import Launchcode.Driversetup;
 )
 public class RunCucumberTestNG extends AbstractTestNGCucumberTests {
     
-    private static Driversetup driverSetup = new Driversetup();
+    //private static Driversetup driverSetup = new Driversetup();
 
     // This lets TestNG run scenarios in parallel if needed
     @Override
